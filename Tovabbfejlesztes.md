@@ -21,8 +21,8 @@ java -jar ./target/demo-0.0.1-SNAPSHOT.jar
 ```
 
 ## Továbbfejlesztés
-[!TIP]
-profilok létrehozása(production , dev , test)
+> [!TIP]
+> profilok létrehozása(production , dev , test)
 
 [!TIP]
 Konténerizáció

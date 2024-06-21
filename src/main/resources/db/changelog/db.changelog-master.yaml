@@ -56,3 +56,45 @@ databaseChangeLog:
                   type: varchar(50)
                   constraints:
                     nullable: false
+  - changeSet:
+      id: yml-2
+      author: liquibase-docs
+      changes:
+        - insert:
+            tableName: Client
+            columns:
+              - column:
+                  name: name
+                  value: 'TestClient1'
+              - column:
+                  name: email
+                  value: 'testclient1@gmail.com'
+        - insert:
+            tableName: Client
+            columns:
+              - column:
+                  name: name
+                  value: 'TestClient2'
+              - column:
+                  name: email
+                  value: 'testclient2@gmail.com'
+        - insert:
+            tableName: Position
+            columns:
+              - column:
+                  name: name
+                  value: 'TestPosition1'
+              - column:
+                  name: location
+                  value: 'TestLocation1'
+        - insert:
+            tableName: Position
+            columns:
+              - column:
+                  name: name
+                  value: 'TestPosition2'
+              - column:
+                  name: location
+                  value: 'TestLocation2'
+
+

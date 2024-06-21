@@ -1,0 +1,58 @@
+databaseChangeLog:
+  - changeSet:
+      id: added client table
+      author: Dominika
+      preConditions:
+        not:
+          tableExists:
+            tableName: Client
+      changes:
+        - createTable:
+            tableName: Client
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name:  name
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              - column:
+                  name:  email
+                  type:  varchar(50)
+                  constraints:
+                    nullable: false
+                    unique: true
+  - changeSet:
+      id: added Positions table
+      author: Dominika
+      preConditions:
+        not:
+          tableExists:
+            tableName: Position
+      changes:
+        - createTable:
+            tableName: Position
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: location
+                  type: varchar(50)
+                  constraints:
+                    nullable: false

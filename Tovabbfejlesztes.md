@@ -22,13 +22,13 @@ java -jar ./target/demo-0.0.1-SNAPSHOT.jar
 
 ## Továbbfejlesztés
 > [!TIP]
-> profilok létrehozása(production , dev , test)
+> profilok létrehozása pl: (production , dev , test)
 
-[!TIP]
-Konténerizáció
+> [!TIP]
+> Konténerizáció
 
-[!TIP]
-tesztek írása
+> [!TIP]
+> tesztek írása
 
-[!TIP]
-dokumentáció
+> [!TIP]
+> dokumentáció
